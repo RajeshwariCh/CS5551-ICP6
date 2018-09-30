@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form action="/action_page.php">
+    <b>User name:</b><br>
+    <input type="text" [(ngModel)]="uname" name="firstname" value="">
+    <br>
+    <b>Password:</b><br>
+    <input type="text" [(ngModel)]="pwd" name="lastname" value="">
+    <br><br>
+    <input type="submit" value="Submit" (click) = "Success()">
+    <input type="submit" value="NewUser" (click) = "NewUser()">
+  </form>
+
+
+</ion-content>
